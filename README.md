@@ -1,1 +1,1 @@
-# react_itajr
+# Treinamento ITA JR - React
