@@ -1,22 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Login.css';
 
 function Login() {
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
   return (
     <div className = "Login">
-      <img
-        src="http://www.aeitaonline.com.br/wiki/images/thumb/7/76/ITA_J%C3%BAnior.jpg/700px-ITA_J%C3%BAnior.jpg"
-        alt="logo ita jr"
-      />
-      <div class="loginFrame">
-        <input type="text" placeholder="Usuário" />
-        <input
-          type="password"
-          placeholder="Senha"
-          name="Senha"
-          id="loginPassword"
-        />
-        <button>Log In</button>
+      <div className = "loginFrame">
+        <input type="text" value={user} onChange = {e => setUser(e.target.value)}/>
+        <input type="password" value={pass} onChange = {e => setPass(e.target.value)}/>
+        <button onClick={() => {setUser(""); setPass("");}}>Log In</button>
       </div>
       <p>Ainda nao tem uma conta? <a href="#">Cadastre-se</a></p>
     </div>
