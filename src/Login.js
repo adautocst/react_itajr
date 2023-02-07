@@ -2,8 +2,10 @@ import React, {useState} from 'react'
 import './Login.css';
 
 function Login() {
+  
   const [user, setUser] = useState("");
   const [pass, setPass] = useState("");
+
   return (
     <div className = "Login">
       <div className = "loginFrame">

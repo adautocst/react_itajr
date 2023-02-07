@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 function Home() {
   const [money, setMoney] = useState(0);
-
+  
   return (
     <div className='Home'>
       <h1>Deixe a JR mais rica</h1>
